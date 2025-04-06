@@ -23,6 +23,6 @@ module barrel_shifter(
   
   multiplexer u0 (.i(i),.s(s),.o(o[0]));
   multiplexer u1 (.i({i[2],i[1],i[0],i[3]}),.s(s),.o(o[1]));
-  multiplexer u2 (.i({i[1],i[0],i[3],i[2]}),.s(s),.o(o[1]));
-  multiplexer u3 (.i({i[0],i[3],i[2],i[1]}),.s(s),.o(o[1]));
+  multiplexer u2 (.i({i[1],i[0],i[3],i[2]}),.s(s),.o(o[2]));
+  multiplexer u3 (.i({i[0],i[3],i[2],i[1]}),.s(s),.o(o[3]));
 endmodule
