@@ -24,5 +24,5 @@ module tt_um_ankur_gupta_29_4bit_barrel_shifter (
 
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, clk, rst_n, 1'b0};
- barrel_shifter u0(.i(ui_in[3:0]),.s(ui_in[5:4]),.o(uo_out[3:0]))
+    barrel_shifter u0(.i(ui_in[3:0]),.s(ui_in[5:4]),.o(uo_out[3:0]));
 endmodule
